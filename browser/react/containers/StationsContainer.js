@@ -13,7 +13,5 @@ const convertSongsToStations = function (songsArray) {
 };
 
 const mapStateToProps = state => ({stations: convertSongsToStations(state.songs)});
-const mapDispatchToProps = dispatch => ({});
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(Stations);
+export default connect(mapStateToProps)(Stations);
